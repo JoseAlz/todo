@@ -1,7 +1,7 @@
 import { projectManager, projectFactory, taskFactory } from "./objStuff";
 import { allTasksDisplay } from "./topNavStuff";
 import { displayBottomNavDivs } from "./bottomNavStuff";
-import "./style.css";
+import "./styles.css";
 
 // projects in local storage are first created using the projectFactory, then each
 // of their tasks are created, then finally they are added to the project manager and

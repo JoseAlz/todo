@@ -47,10 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 
 html {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .pagewrap {
@@ -64,7 +64,7 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
-  background-color: #a8e6c3;
+  background-color: #4D77FF;
 }
 
 header p {
@@ -81,7 +81,7 @@ header p {
   box-sizing: border-box;
   padding: 20px 30px;
   /* temp */
-  background-color: #a8e6c3;
+  background-color: #AAAAAA;
 }
 
 .side-nav div {
@@ -94,7 +94,7 @@ header p {
 
 /* temp */
 .side-nav div:hover {
-  background-color: #ffd3b5;
+  background-color: #F2FA5A;
 }
 
 .sidebar img {
@@ -120,7 +120,7 @@ header p {
 
 /* temp */
 .bottom-side-nav div:not(.project-form, .project-form-buttons):hover {
-  background-color: #ffd3b5;
+  background-color: #B4FE98;
 }
 
 .bottom-side-nav div:not(.project-form, .project-form-buttons):hover #close {
@@ -140,7 +140,7 @@ header p {
 
 .selected {
   /* temp */
-  background-color: #ffd3b5;
+  background-color: #96BAFF;
 }
 
 .content {
