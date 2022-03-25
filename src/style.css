@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.pagewrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #a8e6c3;
+}
+
+header p {
+  padding-left: 10px;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  /* temp */
+  background-color: #a8e6c3;
+}
+
+.side-nav div {
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* temp */
+.side-nav div:hover {
+  background-color: #ffd3b5;
+}
+
+.sidebar img {
+  padding-right: 1rem;
+}
+
+.bottom-side-nav {
+  margin-top: 10px;
+}
+
+.bottom-side-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.bottom-side-nav div {
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* temp */
+.bottom-side-nav div:not(.project-form, .project-form-buttons):hover {
+  background-color: #ffd3b5;
+}
+
+.bottom-side-nav div:not(.project-form, .project-form-buttons):hover #close {
+  display: block;
+}
+
+.project-div>img:last-child {
+  display: none;
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.project-div>img:last-child:hover {
+  width: 18px;
+  height: 18px;
+}
+
+.selected {
+  /* temp */
+  background-color: #ffd3b5;
+}
+
+.content {
+  flex: 1;
+  /* temp for layout */
+  background-color: #dcedc2;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  height: 30px;
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #a8e6c3;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.task-content {
+  width: 50%;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.default-task-button {
+  height: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #a8e6ce;
+}
+
+.default-task-button:hover {
+  filter: brightness(85%);
+}
+
+.default-task-button img {
+  padding-right: 1rem;
+}
+
+.task-template {
+  height: 20px;
+  padding: 0.5rem;
+  background-color: #ffaaa6;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-template img:nth-child(2) {
+  margin-left: 5px;
+}
+
+#star-img {
+  margin-right: 10px;
+}
+
+.task-template img{
+  cursor: pointer;
+}
+
+.right-task {
+  display: flex;
+  margin-left: auto;
+}
+
+#close-task {
+  display: none;
+  margin-left: 5px;
+}
+
+.task-template:hover #close-task {
+  display: block;
+}
+
+.task-description {
+  display: none;
+  flex-direction: column;
+  height: 50px;
+  padding: 0.5rem;
+  background-color: #ffd3b5;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.description-para {
+  margin-top: 5px;
+  margin-left: 15px;
+  word-wrap: break-word;
+}
+
+.form-container {
+  display: none;
+  justify-content: center;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ff8c94;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-container input {
+  height: 2rem;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container textarea {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form-container button {
+  padding: 2px;
+}
+
+.project-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-form input {
+  border-radius: 5px;
+  height: 1.5rem;
+}
+
+.project-form-buttons button {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.project-submit-btn {
+  margin-right: 10px;
+}
+
+#task-form-submit, #task-form-cancel {
+  cursor: pointer;
+  padding : 5px;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: center;
+}
